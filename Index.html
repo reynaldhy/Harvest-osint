@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSINT Harvester PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🔥 OSINT Harvester PRO</h1>
+
+  <input type="text" id="domainInput" placeholder="Masukkan domain (example.com)">
+  <button onclick="startScan()">Start Scan</button>
+  <button onclick="exportResults()">Export TXT</button>
+
+  <div id="loading" class="hidden">Scanning...</div>
+
+  <div class="result-box">
+    <h3>Email:</h3>
+    <ul id="emailList"></ul>
+
+    <h3>Subdomain:</h3>
+    <ul id="subdomainList"></ul>
+
+    <h3>DNS:</h3>
+    <pre id="dnsInfo"></pre>
+
+    <h3>IP Address:</h3>
+    <pre id="ipInfo"></pre>
+
+    <h3>WHOIS:</h3>
+    <pre id="whoisInfo"></pre>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
